@@ -1,50 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+/* NORMALIZE */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
     font-size: 62.5%;
+    height: 100%;
 }
+
+body {
+    background-color: rgb(190, 190, 190);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BREADCRUMB */
 
 .box {
     background-color: rgb(231, 231, 231);
 }
 
-.breadcrums {
+.breadcrumbs {
     padding: 1.0rem;
 }
 
-.breadcrums__item {
+.breadcrumbs__item {
     display: inline-block;
     list-style-type: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 1.2em;
 }
 
-.breadcrums__item:not(:last-of-type)::after {
+.breadcrumbs__item:not(:last-of-type)::after {
     content: '/';
     color: rgb(197, 197, 197);
     padding: 0 .5rem;
 }
 
-.breadcrums__link {
+.breadcrumbs__link {
     text-decoration: none;
     color: rgb(104, 104, 104);
 }
 
-.breadcrums__link:hover {
+.breadcrumbs__link:hover {
     text-decoration: underline;
 }
 
-.breadcrums__link--active {
+.breadcrumbs__link--active {
     color: black;
 }
 
-.breadcrums__link--active:hover {
+.breadcrumbs__link--active:hover {
     text-decoration: none;
     cursor: default;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    margin-top: auto;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: white;
+}
+
+span {
+    font-weight:600;
+    color: rgb(184, 156, 0);
 }
