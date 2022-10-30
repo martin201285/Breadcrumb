@@ -6,23 +6,45 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%;
+}
+
+.box {
+    background-color: rgb(231, 231, 231);
+}
+
 .breadcrums {
-    padding: 15px 10px;
+    padding: 1.0rem;
 }
 
 .breadcrums__item {
     display: inline-block;
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    font-size: 1.2em;
 }
 
 .breadcrums__item:not(:last-of-type)::after {
     content: '/';
     color: rgb(197, 197, 197);
+    padding: 0 .5rem;
 }
 
 .breadcrums__link {
     text-decoration: none;
     color: rgb(104, 104, 104);
+}
+
+.breadcrums__link:hover {
+    text-decoration: underline;
+}
+
+.breadcrums__link--active {
+    color: black;
+}
+
+.breadcrums__link--active:hover {
+    text-decoration: none;
+    cursor: default;
 }
