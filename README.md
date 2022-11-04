@@ -10,9 +10,11 @@ Una navegación de tipo breadcrumb proporciona enlaces a cada página anterior p
 - HTML
 - CSS
 
+<br />
 
 ## English:
 Practice exercise
+
 ###### Breadcrumb:
 A breadcrumb navigation provide links back to each previous page the user navigated through, and shows the user's current location in a website.
 
